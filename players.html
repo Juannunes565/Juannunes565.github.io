@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylePlayers.css"/>
+    <title>Bingo game</title>
+</head>
+<body>
+    <form id="form">
+        <h1>Jugadores del bingo</h1>
+        <div class="container">
+            <div class="p1"><input type="text" id="player1"></div>
+            <div class="p2"><input type="text" id="player2"></div>
+            <div class="p3"><input type="text" id="player3"></div>
+            <div class="p4"><input type="text" id="player4"></div>
+        </div>
+        <h2>Tamaño del carton</h2>
+        <div class="size-container">
+            <div>
+                <input type="radio" id="3x3" name="size" value="3"> 
+                <label for="3x3">3x3</label>
+            </div>
+            <div>
+                <input type="radio" id="4x4" name="size" value="4"> 
+                <label for="4x4">4x4</label>
+            </div>
+            <div>
+                <input type="radio" id="5x5" name="size" value="5">
+                <label for="5x5">5x5</label>
+            </div>
+        </div>
+        <div class="submit-container">
+            <input type="submit">
+        </div>
+    </form>
+    <script src="js/savePlayers.js"></script>
+</body>
+</html>
