@@ -30,6 +30,10 @@ document.getElementById("form").addEventListener('submit', function(event){
         localStorage.setItem("player3", player3);
         localStorage.setItem("player4", player4);
         localStorage.setItem("size", sizeBox);
+        localStorage.setItem("score1", 0);
+        localStorage.setItem("score2", 0);
+        localStorage.setItem("score3", 0);
+        localStorage.setItem("score4", 0);
     }
 
     window.location.href = "main.html";

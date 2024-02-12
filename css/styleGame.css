@@ -1,0 +1,75 @@
+.container{
+    position: relative;
+    max-width: 100%;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+h2{
+    text-align: center;
+}
+
+.carrusel-container{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.box{
+    border: 0.5px solid rgb(0, 0, 0);
+    display: grid;
+    flex: 0 0 auto;
+}
+
+.element{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.element-selected{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    background-color: rgb(255, 105, 105);
+}
+
+#next{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#back{
+    margin-top: 2%;
+}
+
+#player{
+    margin: 0;
+}
+
+
+.title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3%;
+}
+
+button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1% 3% 1% 3%;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+

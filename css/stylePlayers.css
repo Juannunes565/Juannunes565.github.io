@@ -1,5 +1,8 @@
 h1{
     text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 3%;
 }
 
 .container{
@@ -8,7 +11,7 @@ h1{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 5%;
-    background-color: bisque;
+
 }
 
 .container div{
@@ -16,6 +19,7 @@ h1{
     border: 3px solid black;
     padding: 10px 10px 80px 10px;
     max-height: 210px;
+    border-radius: 15px;
 }
 
 h2{
@@ -35,8 +39,74 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 3%;
 }
+
+.p1{
+    background-color: rgb(255, 0, 0);
+}
+
+.p2{
+    background-color: rgb(30, 255, 0);
+}
+
+.p3{
+    background-color: rgb(0, 47, 255);
+}
+
+.p4{
+    background-color: rgb(238, 255, 0);
+}
+
+#player1{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(218, 0, 0);
+    color: white;
+    text-align: center; 
+}
+
+#player2{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(24, 202, 0);
+    color: white;
+    text-align: center; 
+}
+
+#player3{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(0, 39, 212);
+    color: white;
+    text-align: center; 
+}
+
+#player4{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(195, 209, 0);
+    color: white;
+    text-align: center; 
+}
+
+::placeholder{
+    color: white;
+}
+
+.submit{
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+
 
 
 

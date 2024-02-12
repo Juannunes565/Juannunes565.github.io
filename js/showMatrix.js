@@ -1,26 +1,19 @@
-function createMatrix(){
-    for (let i = 0; i < 4; i++) {
-        var size = localStorage.getItem("size");
-    
-        var matrix = [];
-        for (let i = 0; i < size; i++){
-            var row = [];
-            for (let j = 0; j < size; j++){
-                let numeroAleatorio = Math.random() * (50 - 1) + 1;
-                row.push(parseInt(numeroAleatorio));
-            }
-            matrix.push(row);
-        }
+function showMatrix(){
+    let matrix1 = JSON.parse(localStorage.getItem("matrix1"));
+    let matrix2 = JSON.parse(localStorage.getItem("matrix2"));
+    let matrix3 = JSON.parse(localStorage.getItem("matrix3"));
+    let matrix4 = JSON.parse(localStorage.getItem("matrix4"));
+    let size = localStorage.getItem("size");
 
-        console.log(matrix)
-        
-        localStorage.setItem("matrix" + (i+1), JSON.stringify(matrix));
-    }  
-    /*  
+    
+    let allMatrix = [matrix4, matrix3, matrix2, matrix1]
+    allMatrix.forEach(function(matrix, index){
+
         //Crear el carton
         let box = document.createElement("div");
         box.className = "box";
-
+        box.id = "box" + index;
+    
         //Establecer la cantidad de columnas
         let str = ""
         for (let i = 0; i < size; i++){
@@ -32,6 +25,7 @@ function createMatrix(){
             }
         }
         box.style.gridTemplateColumns = str;
+        
 
         //Agregar los numeros al carton
         matrix.forEach(function(row){
@@ -45,7 +39,9 @@ function createMatrix(){
         
         //Agregar el carton al contenedor
         document.getElementById("container").appendChild(box);
-    */    
+
+    })
+
 }
 
-createMatrix();
+showMatrix();

@@ -8,12 +8,16 @@ function loadPlayers(){
     
     let score = document.getElementById("score");
 
-    players.forEach(function(player){
+    players.forEach(function(player, index){
         let p = document.createElement("p");
-        let text = document.createTextNode(player + ": 0");
+        let puntuacion = localStorage.getItem("score" + (index+1));
+        console.log(puntuacion);
+
+        let text = document.createTextNode(player + ": " + puntuacion);
         p.appendChild(text);
         score.appendChild(p);
     })
+
 }
 
 loadPlayers();
